@@ -1,1 +1,84 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ESP32 Catalog — Panduan Lengkap Chip, Modul &amp; Board</title>
+<meta name="description" content="Katalog lengkap varian ESP32: chip inti, modul antena, development board, hingga board fungsi khusus pihak ketiga seperti ESP32-CAM." />
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Langsung ke konten</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-chip" aria-hidden="true"></span>
+      <span class="brand-text">
+        <span class="t1">ESP32.CATALOG</span>
+        <span class="t2">Chip · Modul · Board</span>
+      </span>
+    </a>
+
+    <div class="header-right">
+      <div class="search-box">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input type="text" class="js-search" placeholder="Cari varian, mis. WROOM..." aria-label="Cari varian ESP32" />
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="nav-panel" aria-label="Buka menu navigasi">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="nav-panel" id="nav-panel" aria-label="Navigasi kategori">
+    <div class="nav-panel-inner">
+      <div class="mobile-search">
+        <input type="text" class="js-search" placeholder="Cari varian, mis. WROOM, LoRa, CAM..." aria-label="Cari varian ESP32" />
+      </div>
+      <div class="nav-groups" id="nav-groups"></div>
+    </div>
+  </nav>
+</header>
+
+<main id="main-wrap">
+  <section class="hero" id="top">
+    <div class="hero-eyebrow"><span class="dot"></span> Referensi Ekosistem Espressif</div>
+    <h1>Peta lengkap semua<br class="hide-mobile" /> varian <span class="accent">ESP32</span>.</h1>
+    <p>
+      Dari silikon inti (SoC), modul dengan antena tercetak, development board siap pakai,
+      sampai board turunan pihak ketiga seperti ESP32-CAM, LoRa, dan Ethernet — semua dipetakan
+      dalam satu katalog agar mudah dibandingkan sebelum memilih.
+    </p>
+    <div class="hero-stats">
+      <div><span class="n" id="stat-total">0+</span><span class="l">Varian Terdata</span></div>
+      <div><span class="n" id="stat-cat">0</span><span class="l">Kategori Utama</span></div>
+      <div><span class="n">RISC-V + Xtensa</span><span class="l">Dua Arsitektur</span></div>
+    </div>
+  </section>
+
+  <div id="main"></div>
+
+  <div class="section" style="padding-top:0;">
+    <div class="no-results" id="no-results" style="display:none;">Tidak ada varian yang cocok dengan pencarianmu.</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <span class="mono">ESP32.CATALOG — disusun untuk referensi komunitas maker Indonesia.</span>
+  <span class="mono">Data chip &amp; board bersumber dari dokumentasi resmi Espressif dan vendor pihak ketiga.</span>
+</footer>
+
+<button class="to-top" id="to-top" aria-label="Kembali ke atas">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="script/data.js"></script>
+<script src="script/main.js"></script>
+</body>
+</html>
