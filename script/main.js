@@ -67,7 +67,6 @@
     a.addEventListener("click", closeNav);
   });
 
-  /* ---------------- render main content ---------------- */
   var totalItems = 0;
 
   DATA.categories.forEach(function (cat) {
