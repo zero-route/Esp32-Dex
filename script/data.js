@@ -1,4 +1,3 @@
-// ESP32 Variant Catalog — Data Source
 window.ESP32_DATA = {
   categories: [
     {
