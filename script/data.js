@@ -11,23 +11,23 @@ window.ESP32_DATA = {
           label: "Seri ESP32 Original (Xtensa LX6 Dual-Core & Single-Core)",
           items: [
             { name: "ESP32", desc: "Chip generasi pertama. Dual-core Xtensa LX6 240MHz, Wi-Fi b/g/n + Bluetooth Classic & BLE. Fondasi hampir seluruh ekosistem.", tags: ["Wi-Fi", "BT+BLE", "240MHz"], image: "img/esp32.png" },
-            { name: "ESP32-D0WDQ6", desc: "Chip dual-core andalan generasi pertama dalam kemasan QFN48 6×6 mm, menjadi fondasi mayoritas modul WROOM/WROVER awal.", tags: ["Dual-core", "QFN48 6x6"], image: "img/esp32-d0wdq6.png" },
-            { name: "ESP32-D0WD", desc: "Varian dual-core dengan kemasan lebih ringkas QFN48 5×5 mm, dipakai pada modul-modul berukuran lebih kecil.", tags: ["Dual-core", "QFN48 5x5"], image: "img/esp32-d0wd.png" },
-            { name: "ESP32-D2WD", desc: "Menyematkan 2 MB flash langsung di dalam chip (embedded flash), memangkas kebutuhan komponen memori eksternal.", tags: ["Embedded Flash", "2MB"], image: "img/esp32-d2wd.png" },
-            { name: "ESP32-S0WD", desc: "Versi single-core hemat biaya dalam kemasan QFN48 5×5 mm, cocok untuk aplikasi ringan bertenaga rendah.", tags: ["Single-core", "Low-power"], image: "img/esp32-s0wd.png" },
-            { name: "ESP32-PICO-D4", desc: "System-in-Package dual-core dengan 4 MB flash tertanam, menyatukan chip, kristal, dan flash dalam satu paket mini.", tags: ["SiP", "4MB Flash"], image: "img/esp32-pico-d4.png" },
-            { name: "ESP32-PICO-V3", desc: "Revisi SiP dual-core dengan silicon stepping ECO V3 untuk stabilitas dan kompatibilitas software yang lebih baik.", tags: ["SiP", "ECO V3"], image: "img/esp32-pico-v3.png" },
-            { name: "ESP32-PICO-V3-02", desc: "SiP dual-core kelas atas dengan 8 MB flash dan 2 MB PSRAM terintegrasi, mendukung aplikasi dengan kebutuhan memori lebih besar.", tags: ["SiP", "8MB Flash", "2MB PSRAM"], image: "img/esp32-pico-v3-02.png" },
+            { name: "ESP32-D0WDQ6", desc: "Chip dual-core andalan generasi pertama dalam kemasan QFN48 6×6 mm, menjadi fondasi mayoritas modul WROOM/WROVER awal.", tags: ["Dual-core", "QFN48 6x6"], image: "img/esp32.png" },
+            { name: "ESP32-D0WD", desc: "Varian dual-core dengan kemasan lebih ringkas QFN48 5×5 mm, dipakai pada modul-modul berukuran lebih kecil.", tags: ["Dual-core", "QFN48 5x5"], image: "img/esp32.png" },
+            { name: "ESP32-D2WD", desc: "Menyematkan 2 MB flash langsung di dalam chip (embedded flash), memangkas kebutuhan komponen memori eksternal.", tags: ["Embedded Flash", "2MB"], image: "img/esp32.png" },
+            { name: "ESP32-S0WD", desc: "Versi single-core hemat biaya dalam kemasan QFN48 5×5 mm, cocok untuk aplikasi ringan bertenaga rendah.", tags: ["Single-core", "Low-power"], image: "img/esp32.png" },
+            { name: "ESP32-PICO-D4", desc: "System-in-Package dual-core dengan 4 MB flash tertanam, menyatukan chip, kristal, dan flash dalam satu paket mini.", tags: ["SiP", "4MB Flash"], image: "img/esp32.png" },
+            { name: "ESP32-PICO-V3", desc: "Revisi SiP dual-core dengan silicon stepping ECO V3 untuk stabilitas dan kompatibilitas software yang lebih baik.", tags: ["SiP", "ECO V3"], image: "img/esp32.png" },
+            { name: "ESP32-PICO-V3-02", desc: "SiP dual-core kelas atas dengan 8 MB flash dan 2 MB PSRAM terintegrasi, mendukung aplikasi dengan kebutuhan memori lebih besar.", tags: ["SiP", "8MB Flash", "2MB PSRAM"], image: "img/esp32.png" },
           ],
         },
         {
           label: "Seri ESP32-S — Performa & Keamanan (Xtensa)",
           items: [
             { name: "ESP32-S2", desc: "Single-core LX7 240MHz, fokus USB OTG native dan efisiensi daya. Tanpa Bluetooth, hanya Wi-Fi.", tags: ["Wi-Fi", "USB OTG", "Single-core"], image: "img/esp32-s2.png" },
-            { name: "ESP32-S2FH2 / S2FH4", desc: "Varian S2 dengan flash tertanam langsung 2 MB atau 4 MB, mengurangi jumlah komponen pada PCB.", tags: ["Embedded Flash", "USB OTG"], image: "img/esp32-s2fh4.png" },
-            { name: "ESP32-S2FN4", desc: "Varian S2 dengan 4 MB embedded flash, ditujukan untuk desain board yang lebih ringkas.", tags: ["4MB Flash", "USB OTG"], image: "img/esp32-s2fn4.png" },
+            { name: "ESP32-S2FH2 / S2FH4", desc: "Varian S2 dengan flash tertanam langsung 2 MB atau 4 MB, mengurangi jumlah komponen pada PCB.", tags: ["Embedded Flash", "USB OTG"], image: "img/esp32-s2.png" },
+            { name: "ESP32-S2FN4", desc: "Varian S2 dengan 4 MB embedded flash, ditujukan untuk desain board yang lebih ringkas.", tags: ["4MB Flash", "USB OTG"], image: "img/esp32-s2.png" },
             { name: "ESP32-S3", desc: "Penerus populer ESP32. Dual-core LX7 240MHz, instruksi vektor untuk AI ringan, USB OTG native, BLE 5.0, lebih banyak GPIO.", tags: ["Wi-Fi", "BLE", "AI-accel", "USB OTG"], image: "img/esp32-s3.png" },
-            { name: "ESP32-S3FH4R2 / S3R8 / S3R8V", desc: "Kumpulan varian SoC S3 dengan kombinasi embedded flash dan PSRAM berbeda untuk menyesuaikan kebutuhan memori aplikasi.", tags: ["Varian Memory", "PSRAM"], image: "img/esp32-s3-variants.png" },
+            { name: "ESP32-S3FH4R2 / S3R8 / S3R8V", desc: "Kumpulan varian SoC S3 dengan kombinasi embedded flash dan PSRAM berbeda untuk menyesuaikan kebutuhan memori aplikasi.", tags: ["Varian Memory", "PSRAM"], image: "img/esp32-s3.png" },
           ],
         },
         {
@@ -44,7 +44,7 @@ window.ESP32_DATA = {
           label: "Seri ESP32-H — Wireless Ultra-Low Power (RISC-V, Non Wi-Fi)",
           items: [
             { name: "ESP32-H2", desc: "RISC-V single-core 96MHz tanpa Wi-Fi sama sekali — hanya BLE 5.2 + 802.15.4. Ditujukan sebagai node Thread/Zigbee hemat daya.", tags: ["BLE", "Thread/Zigbee", "No Wi-Fi"], image: "img/esp32-h2.png" },
-            { name: "ESP32-H22", desc: "Varian kemasan lebih kecil dari H2, ditujukan untuk perangkat mesh sensor yang mengutamakan ukuran.", tags: ["Compact", "Thread/Zigbee"], image: "img/esp32-h22.png" },
+            { name: "ESP32-H22", desc: "Varian kemasan lebih kecil dari H2, ditujukan untuk perangkat mesh sensor yang mengutamakan ukuran.", tags: ["Compact", "Thread/Zigbee"], image: "img/esp32-h2.png" },
           ],
         },
         {
