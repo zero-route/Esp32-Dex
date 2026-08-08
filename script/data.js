@@ -1,3 +1,4 @@
+// ESP32 Variant Catalog — Data Source
 window.ESP32_DATA = {
   categories: [
     {
@@ -38,6 +39,12 @@ window.ESP32_DATA = {
             { name: "ESP32-C5", desc: "RISC-V single-core dengan dukungan Wi-Fi 6 dual-band 2.4/5 GHz dan BLE 5.0 untuk kebutuhan jaringan modern.", tags: ["Wi-Fi 6", "Dual-band", "BLE"], image: "img/esp32-c5.png" },
             { name: "ESP32-C6", desc: "RISC-V 160MHz, Wi-Fi 6 (2.4 GHz) + BLE 5.3 + 802.15.4 (Zigbee/Thread) dalam satu chip. Cocok untuk gateway Matter.", tags: ["Wi-Fi 6", "Thread/Zigbee", "BLE 5.3"], image: "img/esp32-c6.png" },
             { name: "ESP32-C61", desc: "Versi teroptimasi dari C6 yang difokuskan pada efisiensi biaya untuk implementasi IoT skala besar.", tags: ["RISC-V", "Cost-effective"], image: "img/esp32-c61.png" },
+          ],
+        },
+        {
+          label: "Seri ESP32-E — High-Performance Wireless Gateway (RISC-V)",
+          items: [
+            { name: "ESP32-E22", desc: "Dual-core RISC-V 500MHz performa tertinggi di kelasnya, dengan radio Wi-Fi 6E + Thread Border Router + BLE. Ditujukan untuk gateway smart home/Matter kelas atas.", tags: ["RISC-V", "Wi-Fi 6E", "Thread Border Router", "BLE"], image: "img/esp32-e22.png" },
           ],
         },
         {
