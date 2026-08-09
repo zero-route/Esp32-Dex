@@ -41,11 +41,6 @@ body {
   position: relative;
 }
 
-/* ---------- textured background ----------
-   Layer 1: faint radial glow (blue, top-left)
-   Layer 2: fine grid lines like PCB copper traces
-   Layer 3: SVG turbulence grain for a "brushed panel" feel
-*/
 body::before {
   content: "";
   position: fixed;
