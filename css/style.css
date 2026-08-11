@@ -2,13 +2,13 @@
   --void: #060a12;
   --panel: #0c1424;
   --panel-2: #101b30;
-  --accent: #3d7bff;
-  --accent-soft: #7fa6ff;
-  --accent-deep: #123a73;
+  --accent: #00FF22;
+  --accent-soft: #004EFF;
+  --accent-deep: #000000;
   --line: rgba(130, 160, 230, 0.16);
   --line-strong: rgba(130, 160, 230, 0.32);
-  --text: #f2f5fa;
-  --text-dim: #8b96ae;
+  --text: #FFFFFF;
+  --text-dim: #BFCEEE;
   --text-faint: #5c6884;
   --radius: 2px;
 }
