@@ -198,7 +198,6 @@
   });
 
   /* ---------------- search / filter ---------------- */
-  var searchInputs = document.querySelectorAll(".js-search");
   function applyFilter(q) {
     q = q.trim().toLowerCase();
     var cards = document.querySelectorAll(".card");
