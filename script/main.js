@@ -25,7 +25,6 @@
       .replace(/(^-|-$)/g, "");
   }
 
-  /* ---------------- render nav dropdown ---------------- */
   DATA.categories.forEach(function (cat, i) {
     var catEl = el("div", "nav-cat");
     var num = String(i + 1).padStart(2, "0");
@@ -62,7 +61,6 @@
     navGroups.appendChild(catEl);
   });
 
-  // close nav + collapse on any link click
   navGroups.querySelectorAll("a").forEach(function (a) {
     a.addEventListener("click", closeNav);
   });
@@ -124,7 +122,6 @@
 
   function renderCard(item) {
     var card = el("article", "card");
-    card.setAttribute("data-name", (item.name + " " + (item.tags || []).join(" ") + " " + (item.desc||"")).toLowerCase());
 
     var imgWrap = el("div", "card-img");
     var img = document.createElement("img");
@@ -176,7 +173,6 @@
     return wrap;
   }
 
-  /* ---------------- hamburger toggle ---------------- */
   var hamburger = document.getElementById("hamburger");
   var navPanel = document.getElementById("nav-panel");
 
@@ -197,32 +193,6 @@
     if (e.key === "Escape") closeNav();
   });
 
-  /* ---------------- search / filter ---------------- */
-  function applyFilter(q) {
-    q = q.trim().toLowerCase();
-    var cards = document.querySelectorAll(".card");
-    cards.forEach(function (c) {
-      var match = !q || c.getAttribute("data-name").indexOf(q) !== -1;
-      c.style.display = match ? "" : "none";
-    });
-    document.querySelectorAll(".group").forEach(function (g) {
-      var visible = g.querySelectorAll(".card:not([style*='display: none'])").length;
-      g.style.display = visible ? "" : "none";
-    });
-    var anyVisible = document.querySelectorAll(".card:not([style*='display: none'])").length > 0;
-    var noResults = document.getElementById("no-results");
-    noResults.style.display = q && !anyVisible ? "block" : "none";
-  }
-  searchInputs.forEach(function (input) {
-    input.addEventListener("input", function () {
-      searchInputs.forEach(function (other) {
-        if (other !== input) other.value = input.value;
-      });
-      applyFilter(input.value);
-    });
-  });
-
-  /* ---------------- back to top ---------------- */
   var toTop = document.getElementById("to-top");
   window.addEventListener("scroll", function () {
     toTop.classList.toggle("show", window.scrollY > 500);
